@@ -1,0 +1,20 @@
+ECMT user guide
+	1. build a Method Directive   			
+	Format: BO [BusinessObject].[MethodName] e.g. BO JobEntry.Update
+	2. build a Data Directive
+	Format: DT [TableName] e.g. DT JobHead
+	3. build an Updatable BAQ
+	Format: Ubaq [Updatable BAQ ID].[MethodName] e.g. Ubaq 500_JobInspectionsCreate.Update
+	Note: System Ubaq Will Not Be Created
+	4. open a CSG Proj, if Not Exists, then create empty CSG Proj From Template
+	Format: CSG[GenericServerProcessName] e.g. CSG PAndL
+	5. open GelitaHelpers
+	Format: GH
+	6. build an SSRS Report Project From Reporting Server 
+	Format: SSRS [RDLName] or SSRS [ReportID] e.g. SSRS DutyDrawbackRpt or SSRS 1099Form
+	a. rebuild all BPM projects
+	Format: RebuildAllBPMs
+	b. exit the program
+	Format: quit
+	c. help information
+	Format: help
